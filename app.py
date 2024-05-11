@@ -8,12 +8,12 @@ from functions import *
 import datetime
 
 # Page Configuration
-st.set_page_config(page_title="Jayant Verma", page_icon=Image.open('statics/Me.jpg'),layout="wide",initial_sidebar_state="expanded")
+st.set_page_config(page_title="Jayant Verma", page_icon=Image.open('Me.jpg'),layout="wide",initial_sidebar_state="expanded")
 
 #Sidebar
 
 # Add profile image
-profile_image = Image.open("statics/Me.jpg")
+profile_image = Image.open("Me.jpg")
 st.sidebar.image(profile_image, use_column_width=True)
 
 # Add contact information
@@ -72,7 +72,7 @@ stocks = get_stock_names()
 stock_dict = get_stock_ticker_dict()
 
 st.title("Stock Analysis App")
-image = Image.open('statics/stocks.jpg')
+image = Image.open('stocks.jpg')
 st.image(image,width=700)
 
 user_input = st.selectbox('__Please select the stock for Fundamental and Technical analysis__',(stocks))
